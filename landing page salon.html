@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Glow | Luxury Salon & Spa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+        .active-tab { border-bottom: 2px solid #b45309; color: #b45309; }
+        /* Efek Zoom saat hover card */
+        .service-img { transition: transform 0.5s ease; }
+        .service-card:hover .service-img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-[#FDFCF0] text-stone-800">
+
+    <section class="relative h-[85vh] flex items-center justify-center text-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1920&q=80" class="absolute inset-0 w-full h-full object-cover" alt="Hero Luxury Spa">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 px-6 text-white">
+            <h1 class="text-6xl md:text-9xl mb-4 italic">Aura Glow</h1>
+            <p class="text-sm md:text-lg font-light tracking-[0.4em] uppercase mb-8">Premium Salon & Wellness Spa</p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="#booking" class="bg-amber-700 hover:bg-amber-800 px-8 py-3 rounded-full font-semibold transition text-sm mb-2 md:mb-0">BOOK APPOINTMENT</a>
+                <a href="#services" class="bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 px-8 py-3 rounded-full font-semibold transition text-sm">VIEW MENU</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-5xl md:text-6xl italic mb-4">Our Signature Services</h2>
+                <p class="text-stone-500 max-w-xl mx-auto italic">Geser ke samping untuk melihat rangkaian perawatan eksklusif kami.</p>
+            </div>
+            
+            <div class="flex overflow-x-auto gap-8 pb-12 hide-scroll snap-x px-4">
+                
+                <div class="service-card min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-stone-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" class="service-img w-full h-full object-cover" alt="Hair Service">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Hair Rituals</h3>
+                        <p class="text-xs text-stone-400 mb-4 uppercase tracking-widest">Cut, Color & Care</p>
+                        <p class="text-sm text-stone-600 mb-4 italic">Signature haircut, Balayage, Keratin treatment, and Organic hair spa.</p>
+                        <p class="text-amber-700 font-bold">Start from Rp 150.000</p>
+                    </div>
+                </div>
+
+                <div class="service-card min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-stone-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544161515-4af6b1d462c2?auto=format&fit=crop&w=800&q=80" class="service-img w-full h-full object-cover" alt="Body Massage">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Body Wellness</h3>
+                        <p class="text-xs text-stone-400 mb-4 uppercase tracking-widest">Massage & Therapy</p>
+                        <p class="text-sm text-stone-600 mb-4 italic">Deep tissue massage, Aromatherapy, Hot stone, and Traditional reflexology.</p>
+                        <p class="text-amber-700 font-bold">Start from Rp 200.000</p>
+                    </div>
+                </div>
+
+                <div class="service-card min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-stone-100">
+                    <div class="h-64 overflow-hidden">
+                         <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" class="service-img w-full h-full object-cover" alt="Facial">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Facial Aesthetic</h3>
+                        <p class="text-xs text-stone-400 mb-4 uppercase tracking-widest">Skin Rejuvenation</p>
+                        <p class="text-sm text-stone-600 mb-4 italic">Glow facial, Anti-aging treatment, Microdermabrasion, and Acne care.</p>
+                        <p class="text-amber-700 font-bold">Start from Rp 350.000</p>
+                    </div>
+                </div>
+
+                <div class="service-card min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-stone-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=80" class="service-img w-full h-full object-cover" alt="Nails">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Nail Artistry</h3>
+                        <p class="text-xs text-stone-400 mb-4 uppercase tracking-widest">Mani & Pedi</p>
+                        <p class="text-sm text-stone-600 mb-4 italic">Gel polish, Custom nail art, Spa pedicure, and Paraffin treatment.</p>
+                        <p class="text-amber-700 font-bold">Start from Rp 120.000</p>
+                    </div>
+                </div>
+
+                <div class="service-card min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-stone-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1583001931036-6433bc8179c5?auto=format&fit=crop&w=800&q=80" class="service-img w-full h-full object-cover" alt="Eyelash">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Lash & Brows</h3>
+                        <p class="text-xs text-stone-400 mb-4 uppercase tracking-widest">Eye Enhancement</p>
+                        <p class="text-sm text-stone-600 mb-4 italic">Eyelash extension volume, Lash lift, and Eyebrow lamination.</p>
+                        <p class="text-amber-700 font-bold">Start from Rp 180.000</p>
+                    </div>
+                </div>
+
+                <div class="service-card min-w-[300px] md:min-w-[350px] snap-center bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow border border-stone-100">
+                    <div class="h-64 overflow-hidden">
+                         <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecee?auto=format&fit=crop&w=800&q=80" class="service-img w-full h-full object-cover" alt="Spa Package">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">Spa Packages</h3>
+                        <p class="text-xs text-stone-400 mb-4 uppercase tracking-widest">Full Day Rituals</p>
+                        <p class="text-sm text-stone-600 mb-4 italic">Bridal package, Couple retreat, and Weekend stress release.</p>
+                        <p class="text-amber-700 font-bold">Start from Rp 800.000</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-stone-100">
+        <div class="container mx-auto px-6 text-center max-w-3xl">
+            <h2 class="text-4xl italic mb-10 text-stone-500">Client Love</h2>
+            <p class="text-2xl font-serif italic mb-6 leading-relaxed">"Sangat puas dengan layanannya! Suasananya tenang, terapisnya ramah, dan hasil balayage rambut saya sangat natural. Benar-benar tempat terbaik untuk self-care."</p>
+            <div class="flex items-center justify-center gap-4">
+                <div class="h-px w-8 bg-amber-700"></div>
+                <span class="text-sm font-semibold tracking-widest uppercase">Amanda Syifa, Verified Client</span>
+                <div class="h-px w-8 bg-amber-700"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-24">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col md:flex-row border border-stone-100">
+                
+                <div class="md:w-2/5 bg-[#1c1917] text-white p-12 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-5xl italic mb-8">Get in Touch.</h2>
+                        <p class="text-stone-400 mb-8 font-light">Silakan pilih kategori formulir di samping untuk terhubung dengan kami via WhatsApp.</p>
+                    </div>
+                    <div class="space-y-6 text-sm">
+                        <div>
+                            <p class="text-amber-500 uppercase tracking-widest mb-1 text-xs flex items-center gap-2"><span class="text-lg">📍</span> Lokasi</p>
+                            <p>Jl. Aesthetic No. 88, Jakarta Selatan</p>
+                        </div>
+                        <div>
+                            <p class="text-amber-500 uppercase tracking-widest mb-1 text-xs flex items-center gap-2"><span class="text-lg">🕰️</span> Jam Operasional</p>
+                            <p>Senin - Minggu: 10:00 - 20:00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-3/5 p-8 md:p-12">
+                    <div class="flex gap-8 mb-10 border-b border-stone-100">
+                        <button onclick="switchTab('res')" id="tab-res" class="pb-4 font-semibold active-tab transition tracking-widest text-xs outline-none">RESERVASI JADWAL</button>
+                        <button onclick="switchTab('kon')" id="tab-kon" class="pb-4 font-semibold text-stone-300 transition tracking-widest text-xs outline-none">KONSULTASI GRATIS</button>
+                    </div>
+
+                    <div id="form-reservasi" class="space-y-5 animate-fade-in">
+                        <input type="text" id="resName" placeholder="Nama Lengkap Anda" class="w-full p-4 bg-stone-50 rounded-xl outline-none focus:ring-1 ring-amber-700 transition border border-stone-100">
+                        
+                        <div class="relative">
+                             <label class="text-[10px] text-stone-400 absolute top-2 left-4 z-10">PILIH LAYANAN</label>
+                            <select id="resService" class="w-full p-4 pt-7 bg-stone-50 rounded-xl outline-none border border-stone-100 appearance-none cursor-pointer">
+                                <option>Hair Rituals (Potong/Warna/Spa)</option>
+                                <option>Body Wellness (Massage/Lulur)</option>
+                                <option>Facial Aesthetic (Wajah)</option>
+                                <option>Nail Artistry (Mani-Pedi)</option>
+                                <option>Lash & Brows (Bulu Mata/Alis)</option>
+                                <option>Spa Packages (Paket Lengkap)</option>
+                            </select>
+                            <div class="absolute top-1/2 right-4 transform -translate-y-1/2 pointer-events-none text-stone-400">▼</div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="relative">
+                                <label class="text-[10px] text-stone-400 absolute top-2 left-4">TANGGAL</label>
+                                <input type="date" id="resDate" class="w-full p-4 pt-7 bg-stone-50 rounded-xl outline-none text-sm border border-stone-100 cursor-pointer font-sans">
+                            </div>
+                            <div class="relative">
+                                <label class="text-[10px] text-stone-400 absolute top-2 left-4">JAM (10:00 - 20:00)</label>
+                                <input type="time" id="resTime" min="10:00" max="20:00" class="w-full p-4 pt-7 bg-stone-50 rounded-xl outline-none text-sm border border-stone-100 cursor-pointer font-sans">
+                            </div>
+                        </div>
+                        <button onclick="sendToWA('reservasi')" class="w-full bg-[#1c1917] text-white py-4 rounded-xl font-bold tracking-widest hover:bg-stone-800 transition shadow-lg mt-2">KIRIM RESERVASI 🕊️</button>
+                    </div>
+
+                    <div id="form-konsultasi" class="hidden space-y-5 animate-fade-in">
+                        <input type="text" id="konName" placeholder="Nama Lengkap Anda" class="w-full p-4 bg-stone-50 rounded-xl outline-none focus:ring-1 ring-amber-700 transition border border-stone-100">
+                        <textarea id="konText" rows="5" placeholder="Contoh: Saya punya masalah kulit kering dan kusam, perawatan apa yang cocok?" class="w-full p-4 bg-stone-50 rounded-xl outline-none focus:ring-1 ring-amber-700 transition border border-stone-100"></textarea>
+                        <button onclick="sendToWA('konsultasi')" class="w-full bg-amber-700 text-white py-4 rounded-xl font-bold tracking-widest hover:bg-amber-800 transition shadow-lg mt-2">MULAI KONSULTASI 💬</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-stone-400 text-xs tracking-[0.3em] bg-[#1c1917]">
+        <p>&copy; 2026 AURA GLOW SALON & SPA • PREMIUM WELLNESS</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk mengganti Tab
+        function switchTab(type) {
+            const resForm = document.getElementById('form-reservasi');
+            const konForm = document.getElementById('form-konsultasi');
+            const resTab = document.getElementById('tab-res');
+            const konTab = document.getElementById('tab-kon');
+
+            if (type === 'res') {
+                resForm.classList.remove('hidden');
+                konForm.classList.add('hidden');
+                resTab.classList.add('active-tab');
+                konTab.classList.remove('active-tab');
+                konTab.classList.add('text-stone-300');
+            } else {
+                resForm.classList.add('hidden');
+                konForm.classList.remove('hidden');
+                konTab.classList.add('active-tab');
+                resTab.classList.remove('active-tab');
+                resTab.classList.add('text-stone-300');
+            }
+        }
+
+        // Fungsi Kirim ke WA
+        function sendToWA(type) {
+            // --- PENTING: GANTI NOMOR INI ---
+            const adminNumber = "6281234567890"; 
+            // --------------------------------
+            
+            let message = "";
+
+            if (type === 'reservasi') {
+                const name = document.getElementById('resName').value;
+                const service = document.getElementById('resService').value;
+                const date = document.getElementById('resDate').value;
+                const time = document.getElementById('resTime').value;
+
+                if(!name || !date || !time) { 
+                    alert("Mohon lengkapi nama, tanggal, dan jam reservasi Anda."); 
+                    return; 
+                }
+
+                message = `Halo Admin Aura Glow! ✨%0ASaya ingin booking jadwal perawatan:%0A%0A*Nama:* ${name}%0A*Layanan:* ${service}%0A*Tanggal:* ${date}%0A*Jam:* ${time} WIB%0A%0AApakah slot jadwal ini masih tersedia? Terima kasih.`;
+            } else {
+                const name = document.getElementById('konName').value;
+                const text = document.getElementById('konText').value;
+
+                if(!name || !text) { 
+                    alert("Mohon lengkapi nama dan pertanyaan konsultasi Anda."); 
+                    return; 
+                }
+
+                message = `Halo Konsultan Aura Glow! 🌿%0ASaya ingin konsultasi gratis:%0A%0A*Nama:* ${name}%0A*Pertanyaan/Keluhan:* ${text}%0A%0AMohon arahannya, terima kasih.`;
+            }
+
+            window.open(`https://wa.me/${adminNumber}?text=${message}`, '_blank');
+        }
+    </script>
+
+</body>
+</html>
